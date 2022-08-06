@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <title>File</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="./index.html" class="nav__link nav__link--color">WebStudio</a>
+        <a href="#" class="nav__link">Estudio</a>
+        <a href="./file.html" class="nav__link">Portafolio</a>
+        <a href="./contacto.html" class="nav__link">Contactos</a>
+        <!-- bloque contacto -->
+        <div class="nav__link--contact">
+          <svg
+            class="nav__link--icon"
+            width="16"
+            height="12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 0H2C1.175 0 .507.675.507 1.5l-.007 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9C15.5.675 14.825 0 14 0Zm-.3 3.188L8.398 6.502a.759.759 0 0 1-.795 0L2.3 3.187a.637.637 0 1 1 .675-1.08L8 5.25l5.025-3.143a.637.637 0 1 1 .675 1.08Z"
+              fill="#212121"
+            />
+          </svg>
+          <a href="#" class="nav__link--contact-text">info@devstudio.com</a>
+          <!--       -->
+          <svg
+            class="nav__link--icon"
+            width="14"
+            height="14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m11.996 9.123-1.838-.21a1.44 1.44 0 0 0-1.187.412l-1.332 1.332a10.888 10.888 0 0 1-4.769-4.77L4.21 4.55a1.44 1.44 0 0 0 .412-1.187l-.21-1.824a1.448 1.448 0 0 0-1.44-1.28H1.72C.902.258.222.938.272 1.756c.384 6.18 5.327 11.115 11.5 11.499.817.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.432Z"
+              fill="#212121"
+            />
+          </svg>
+          <a href="#" class="nav__link--contact-text">+52 55 5529 6000</a>
+        </div>
+      </nav>
+    </header>
+    <!-- form -->
+    <div class="form">
+      <form class="form__box">
+        <div class="form__circle">
+          <svg
+            class="form__x"
+            width="11"
+            height="11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1.108 9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108Z"
+              fill="#2196F3"
+            />
+          </svg>
+        </div>
+        <div class="form__title">
+          <h3 class="form__letter">
+            Deje sus datos, nos contactaremos con usted
+          </h3>
+        </div>
+        <!-- name -->
+        <div class="form__imput">
+          <p class="form__text">
+           
+            <label for="nombre"
+              >Nombre
+              <span class="obligatorio">*</span>
+            </label>
+          </p>
+          <svg
+                class="form__icon"
+                width="12"
+                height="12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="input-icon"
+                >
+                <path
+                    d="M6 6a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.002 0-6 1.005-6 3v.75c0 .412.338.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z"
+                    fill="#2196F3"
+                />
+                </svg>
+          <input class="form__rectangle" type="text" placeholder="Escribe tu nombre" name="nombre"/>
+                
+            
+          <!-- phone -->
+          <p class="form__text">
+            <label for="telefono" class="phone">Teléfono </label>
+          </p>
+          
+          <input
+            class="form__rectangle"
+            type="tel"
+            class="input"
+            name=""
+            id=""
+          />
+          <!-- email -->
+          <p class="form__text">
+            <label for="mail" class="email"
+              >E-mail
+              <span class="obligatorio">*</span>
+            </label>
+          </p>
+          <input
+            class="form__rectangle"
+            type="email"
+            class="input"
+            name="email"
+            id=""
+          />
+          <p class="form__text">
+            <label for="mensaje" 
+            >Comentarios </label>
+            <div class="form__message">
+                <textarea
+                
+                name="Introduzca el texto"
+                
+                required="obligatorio"
+                placeholder="Introduzca el texto"
+                ></textarea>
+            </div>  
+          </p>
+          <!-- check -->
+          <div class="check">
+            <input  class="check__square" type="checkbox" name="" id="check" />
+            <p class="check__text">
+            Estoy de acuerdo con el boletín informativo y acepto los Términos y
+            Condiciones</p>
+          </div>
+          <!-- send -->
+          <div class="send">
+            <input
+              type="button"
+              class="send__button"
+              value="Enviar"
+              style="text-align: center"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
